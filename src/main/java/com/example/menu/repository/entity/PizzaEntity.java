@@ -1,11 +1,8 @@
 package com.example.menu.repository.entity;
 
 import lombok.Data;
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedDate;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
 import java.util.List;
 
 /**
@@ -25,10 +22,4 @@ public class PizzaEntity {
 
     @OneToMany(cascade = CascadeType.ALL)
     private List<IngredientEntity> ingredients;
-
-    @CreatedDate
-    private LocalDateTime createDateTime;
-
-    @LastModifiedDate
-    private LocalDateTime updateDateTime;
 }
