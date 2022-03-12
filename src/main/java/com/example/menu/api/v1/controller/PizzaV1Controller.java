@@ -26,7 +26,7 @@ public class PizzaV1Controller {
     private final PizzaV1Converter pizzaV1Converter;
     private final PizzaService pizzaService;
 
-    public PizzaV1Controller(final PizzaV1Converter pizzaV1Converter, PizzaService pizzaService) {
+    public PizzaV1Controller(final PizzaV1Converter pizzaV1Converter, final PizzaService pizzaService) {
         this.pizzaV1Converter = pizzaV1Converter;
         this.pizzaService = pizzaService;
     }

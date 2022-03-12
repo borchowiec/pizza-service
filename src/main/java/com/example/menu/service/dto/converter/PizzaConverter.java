@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 public class PizzaConverter {
     private final IngredientConverter ingredientConverter;
 
-    public PizzaConverter(IngredientConverter ingredientConverter) {
+    public PizzaConverter(final IngredientConverter ingredientConverter) {
         this.ingredientConverter = ingredientConverter;
     }
 

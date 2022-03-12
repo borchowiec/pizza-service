@@ -21,7 +21,7 @@ public class PizzaServiceImpl implements PizzaService {
     private final PizzaRepository pizzaRepository;
     private final PizzaConverter pizzaConverter;
 
-    public PizzaServiceImpl(final PizzaRepository pizzaRepository, PizzaConverter pizzaConverter) {
+    public PizzaServiceImpl(final PizzaRepository pizzaRepository, final PizzaConverter pizzaConverter) {
         this.pizzaRepository = pizzaRepository;
         this.pizzaConverter = pizzaConverter;
     }
